@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivel 2</title>
+<style>
+    /* DEFINE EL CUERPO DE LA PAGINA ENTERA SIN CLASES NI H1, CONTENEDORES, NI ESTILOS*/
+    body {
+        background-color: #0a0017;
+        font-family: Arial, sans-serif; /* LETRA ESTANDAR */
+        color:#fff; /* COLOR TEXTO GENERAL */
+        padding: 30px; /* MARGEN ALREDEDOR DE TODA LA PAGINA */
+    }
+    .contenedor {
+        max-width: 800px; /* LIMITE DE ANCHO PARA QUE NO SE AMPLIE MAS */
+        margin: 0 auto; /* CENTRA LA CAJA */
+        background: #1c002a;
+        padding: 30px;
+        border-radius: 10px;
+        border: 2px solid #7100a9; /* BORDE DECORATIVO */
+    }
+    h1 {
+        color: #7100a9;
+        text-align: center;
+    }
+    p {
+        color: #7100a9;
+        line-height: 1.6; 
+    }
+    /* CREO LA CLASE BTN PARA VOLVER AL NIVEL 1 CON SU PROPIO ESTILO */
+    .btn-volver {
+        display: inline-block; /* PERMITE APLICAR PADDING Y MARGIN A LOS ENLACES */
+        background-color: #7100a9;
+        color:white;
+        padding: 10px 20px; /* RELLENO INTERNO PARA QUE PAREZCA BOTON */
+        text-decoration: none; /* QUITA EL SUBRALLADO */
+        border-radius: 5px;
+        font-weight: bold; /* APLICA NEGRITA */
+        margin-bottom: 20px; /* ESPACIO DEBAJO DEL BOTON */
+    }
+    /* ESTA PARTE ES CUANDO SE PASA EL RAON POR ENCIMA LO QUE HACE ES QUE CAMBIE EL BOTON DE COLOR */
+    /* SE PUEDE NO PONER PERO LA PUSE POR ESTETICA */
+    .btn-volver:hover {
+        background-color: #9b59b6;
+    }
+
+
+</style>
+
+</head>
+<body>
+    
+    <div class="contenedor">
+        <!-- ENLACE DE REGRESO A NIVEL 1 -->
+        <a href="incrustaciones.html" class="btn-volver">&Larr; VOLVER a nivel 1</a>
+
+        <h1>PAGINA SECUNDARIA (NIVEL 2)</h1>
+        <p>HAS ACCEDIDO CORRECTAMENTE AL SEGUNDO NIVEL DE LA WEB</p>
+
+        <section>
+            <h2 style="color: #7100a9;">INFORMACION ADICIONAL DEL PROYECTO</h2>
+            <p>SE HAN INTEGRADO ETIQUETAS SEMANTICAS Y ELEMENTOS MULTIMEDIA DISTRIBUIDO ENTRE AMBAS PAGINAS</p>
+        </section>
+    </div>    
+
+
+
+</body>
+</html>

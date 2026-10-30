@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incrustaciones - Maksym Borrell </title>
+
+<style>
+
+/* hay un maximo de 6 h1 - h6 */
+
+h1 {
+    color: #7100a9;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: underline; /* Agrega subrayado al título */
+    text-decoration-color: blue; /* Cambia el color del subrayado a azul */
+}
+h2 {
+    color: #7100a9;
+    text-align: center;
+    margin-top: 20px;
+}
+body {
+    background-color: #0a0017;
+    font-family: Arial, sans-serif;
+}
+p {
+    color: #0a6400;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos para el encabezado, contenido principal y pie de página */
+header {
+    background-color: #1c002a;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+main {
+    padding: 20px;
+}
+footer {
+    background-color: #1c002a;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+/* Estilos para las secciones, enbuelve todo lo que este dentro en una seccion separada */
+section {
+    margin-bottom: 20px;
+}
+
+/* estilo extra para el menu de navegacion del Nivel 2 */
+.nav-nivel {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background: #2b004a;
+    border-radius: 5px;
+}
+.nav-nivel2 a {
+    color: #00d2d3;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+</style>
+
+
+</head>
+<body>
+    <header>
+        <h1>Incrustaciones</h1>
+    </header>
+
+    <main>
+
+        <!-- Enlace el nivel 2 -->
+        <div class="nav-nivel2">
+            <p style="color: #00d2d3; margin: 0;"><a href="detalles.html">Ir al Nivel 2</a></a></p>
+        </div>
+
+
+        <hr>
+        <section>
+            <h2>IMAGEN DENTRO DE LA CARPETA</h2>
+            <img src="imagen111.jpg" alt="Imagen 111" style="width: 500px; height: auto;">
+        </section>
+
+    <hr>
+    <br>
+<section>
+    <h2>IMAGEN DESDE UNA URL</h2>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLQOa8HHKyxqMBbZnC8uV_-7HRtYHis9chVSm9P2SuOA&s=10" alt="Imagen 222" style="width: 500px; height: auto;">
+</section>
+    <hr>
+    <br>
+
+    <section>
+        <h2>VIDEO DESDE UNA URL</h2>
+
+    <p>TAMBIEN SE PUEDE PONER VIDEOS DESCARGADOS Y GUARDADOS EN LA CARPETA COMO LA IMAGEN DEL INIGIO, SOLO QUE PUEDE LLEVAR MÁS TIEMPO CARGARLOS</p>
+
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width: 560px; height: 315px;"></iframe>
+    </section>
+
+    <hr>
+    <br>
+    <section>
+        <h2>VIDEO DESDE UNA URL CON EMBED</h2>
+
+        <embed src="https://www.youtube.com/embed/dQw4w9WgXcQ" style="width: 200px; height: 200px;"></embed>
+    </section>
+    <hr>
+    <br>
+
+    <section>
+        <h2>VIDEO DESDE UNA URL CON OBJECT</h2>
+
+        <p>EL OBJECT ES SIMILAR AL EMBED, PERO TIENE MÁS FUNCIONES Y ES MÁS COMPLEJO, YA QUE DEJA TANTO IMAGENES COMO VIDEOS ( Y INTERACTUAR CON EL )</p>
+
+        <object data="https://www.youtube.com/embed/dQw4w9WgXcQ" style="width: 200px; height: 200px;"></object>
+        <object data="imagen111.jpg" type="image/jpeg" style="width: 200px; height: 200px;"></object>
+    </section>
+
+    <hr>
+    <br>
+
+<h2>VIDEO DESDE VIDEO</h2>
+<video controls style="width: 500px; height: auto;">
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    Tu navegador no soporta la etiqueta de video.
+</video>
+
+<hr>
+<br>
+
+<h2>AUDIO DESDE UNA URL</h2>
+<audio controls>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+</audio>
+
+<hr>
+<br>
+
+<h2>AUDIO DESDE UNA URL CON AUTOPLAY Y LOOP</h2>
+
+<p>EL AUTOPLAY HACE QUE EL AUDIO SE REPRODUZCA AUTOMATICAMENTE AL CARGAR LA PAGINA, Y EL LOOP HACE QUE EL AUDIO SE REPITA INFINITAMENTE,
+    DADO DE QUE SIN CONTROLS NO APARECE PARA PAUSAR EL AUDIO, SE PUEDE USAR EL CONTROLS PARA QUE APAREZCA EL BOTON DE PAUSA Y REPRODUCIR, 
+    PERO SI SE QUIERE QUE NO APAREZCA EL BOTON DE PAUSA Y REPRODUCIR, SE PUEDE USAR EL AUTOPLAY Y LOOP SIN CONTROLS, PERO ENTONCES NO SE PODRA PAUSAR EL AUDIO.
+    POR ESO SE RECOMIENDA USAR EL AUTOPLAY Y LOOP CON CONTROLS, PARA QUE EL USUARIO PUEDA PAUSAR EL AUDIO SI LO DESEA.
+    
+</p>
+
+<audio autoplay controls loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+</audio>
+
+
+
+<hr>
+<br>
+
+<h2> CANVAS </h2>
+
+<canvas id="myCanvas" width="400" height="200" style="border:1px solid #ff0000;">
+</canvas>
+
+<hr>
+<br>
+
+<h2>SVG</h2>
+
+<svg width="400" height="110">
+  <rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+</svg>
+
+
+    </main>
+    <footer>
+        <p>&copy; 2023 Incrustaciones. Maksym Borrell Jimenez</p>
+    </footer>
+</body>
+</html>
